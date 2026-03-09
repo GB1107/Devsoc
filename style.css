@@ -1,0 +1,143 @@
+.root {
+    --wc: white;
+    --bc: #4a6cf7;
+
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ariel, sans-serif:
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a6cf7;
+    color: white;
+    padding: 15px 40px;
+}
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    gap: 20px;
+
+}
+
+.navbar-icon {
+    display: none;
+    color: var(--wc);
+}
+/* Hero */
+.hero {
+    background: #f4f6f4;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamb(6vw 6vw 7vw);
+    margin-bottom: 10px;
+
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    background: #4a6cf7;
+    border-radius: 5px;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+/* About */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: clamb(5vw 5vw 6vw);
+}
+
+.about p {
+    font-size: clamb(3vw 4vw 5vw);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.footer {
+    background: #222;
+    color: white;
+    padding: 40px 20px 20px 20px;
+    
+
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: clamb(2vw 3vw 4vw);
+}
+
+.footer-content h3 {
+    font-size: clamb(4vw 4vw 5vw);
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style: none;
+
+}
+
+
+.footer-content a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+@media (max-width:768px) {
+    .nav-links {
+        display: none;
+    }
+.navbar-icon {
+    display: block;
+}
+    
+}
